@@ -16,7 +16,7 @@ with open(r'C:\Users\Stepan_\Documents\Informatica\Informatica_EGE\26\Автор
 
 # Удаляем, которые заканчиваются после суток
 sp = list(filter(lambda x: x[1] <= 1440, sp))
-# Добавляем 20 минут после, если 
+# Добавляем 20 минут после
 for i in range(N):
     sp[i][1] += 20
     sp[i].append(sp[i][1]-sp[i][0])

@@ -3,6 +3,7 @@ speed(1000)
 k = 10
 left(90)
 down()
+tracer(0)
 
 
 for i in range(9):
