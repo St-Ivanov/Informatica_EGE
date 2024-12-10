@@ -36,6 +36,7 @@ for id_pl, player in players:
 print(K - len([i for i in chairs_num if len(i) > 0]))
 ans = []
 mn = -100
+# Нам нужно проверить, что игрок первым добежал до стула и его расстояние до стула было максимально среди всех
 # Пробегаемся по стульям и игрокам, которые к ним бегут
 for chair in chairs_num:
     if chair != []:
