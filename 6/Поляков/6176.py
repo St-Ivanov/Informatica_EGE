@@ -20,4 +20,4 @@ for x in range(-50, 50):
         goto(x * k, y * k)
         dot(3, 'red')
 done()
-# от 7 до 28
+# от 7 до 27
