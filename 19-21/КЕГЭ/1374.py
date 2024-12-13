@@ -35,5 +35,6 @@ def f(x, y, h):
             return all(ans)
         else:
             return any(ans)
-print([i for i in range(1, 101) if (f(5, i, 3) and not f(5, i, 1))])
+print([i for i in range(1, 101) if (f(5, i, 3) and not f(5, i, 1))]) # ?
+print([i for i in range(1, 101) if f(5, i, 3) and not f(5, i, 1)])
 print([i for i in range(1, 101) if (f(5, i, 4) or f(5, i, 2)) and (not f(5, i, 2))])
