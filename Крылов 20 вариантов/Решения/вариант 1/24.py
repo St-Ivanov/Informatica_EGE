@@ -1,14 +1,5 @@
-with open(r'C:\Users\si655\OneDrive\Документы\Informatica_EGE\Крылов 20 вариантов\Решения\вариант 1\24var01.txt') as f:
-    s = f.readline()
-last = ''
-lens = 0
+from re import findall
 mx = 0
-for el in s:
-    if (last == '-') or (last == '+' and el == '+') or (last == '+' and el == '0'):
-        last = el
-        lens = 1
-    else:
-        lens += 1
-        mx = max(mx, lens)
-        last = el
+for i in findall(r'(?:0|[1-4][0-4]*)(?:[-+](?:0|[1-4][0-4]*))*', open(r'Крылов 20 вариантов\Решения\вариант 1\24var01.txt').readline()):
+    mx = max(mx, len(i))
 print(mx)

@@ -16,7 +16,7 @@ with open(r'C:\Users\Stepan_\Documents\Informatica\Informatica_EGE\26\Автор
     sp = [[int(j) + 15 for j in i.split()] for i in f.readlines()]
 for i in range(len(sp)):
     sp[i][1] += 15
-sp.sort(key=lambda x: x[1])
+sp.sort(key=lambda x: (x[1]))
 time = [True] * 1440
 ans = []
 for start, end in sp:

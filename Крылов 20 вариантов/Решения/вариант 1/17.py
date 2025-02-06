@@ -1,4 +1,4 @@
-with open(r'C:\Users\si655\OneDrive\Документы\Informatica_EGE\Крылов 20 вариантов\Решения\вариант 1\17.txt') as f:
+with open(r'C:\Users\Stepan_\Documents\Informatica\Informatica_EGE\Крылов 20 вариантов\Решения\вариант 1\17.txt') as f:
     sp = [int(i) for i in f.readlines()]
 mn = min(sp)
 ans = []
